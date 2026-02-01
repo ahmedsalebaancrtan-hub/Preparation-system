@@ -1,0 +1,22 @@
+# Environment Variables
+.env
+backend/.env
+frontend/.env
+
+# Dependencies
+node_modules/
+backend/vendor/
+
+# Builds
+dist/
+backend/main
+backend/main.exe
+*.exe
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
