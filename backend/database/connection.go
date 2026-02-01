@@ -17,8 +17,10 @@ func Connect() error {
 	dbURL := os.Getenv("DATABASE_URL")
 
 	if dbURL != "" {
+		log.Println("DEBUG: Found DATABASE_URL, using it...")
 		connStr = dbURL
 	} else {
+		log.Println("DEBUG: DATABASE_URL is empty! Checking individual variables...")
 		host := os.Getenv("DB_HOST")
 		port := os.Getenv("DB_PORT")
 		user := os.Getenv("DB_USER")
