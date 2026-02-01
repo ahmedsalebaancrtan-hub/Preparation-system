@@ -2,6 +2,7 @@ services:
   - type: web
     name: exam-prep-backend
     env: go
+    rootDir: backend
     plan: free
     buildCommand: go mod tidy && go build -o app .
     startCommand: ./app
