@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: exam-prep-backend
+    env: go
+    plan: free
+    buildCommand: go build -o server .
+    startCommand: ./server
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: DB_HOST
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: EXAM_DATE
+        sync: false
