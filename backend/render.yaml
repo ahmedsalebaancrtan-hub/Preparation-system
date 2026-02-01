@@ -3,8 +3,8 @@ services:
     name: exam-prep-backend
     env: go
     plan: free
-    buildCommand: go mod tidy && go build -o server .
-    startCommand: ./server
+    buildCommand: go mod tidy && go build -o app .
+    startCommand: ./app
     envVars:
       - key: SERVER_PORT
         value: 8080
