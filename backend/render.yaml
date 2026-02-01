@@ -3,7 +3,7 @@ services:
     name: exam-prep-backend
     env: go
     plan: free
-    buildCommand: go build -o server .
+    buildCommand: go mod tidy && go build -o server .
     startCommand: ./server
     envVars:
       - key: SERVER_PORT
